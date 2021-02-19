@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+Simplesh Front-End
+===========================
+![alt text](https://i.ibb.co/HXXxFNT/Screen-Shot-2021-02-18-at-9-56-51-PM.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Prior to setting up this project, please visit the simplesh-api [here](https://github.com/Mar5Planet/simplesh-api). The following instructions are created to set up the React front end for the simplesh application. 
 
-## Available Scripts
+The simplesh application is designed to simplify conversations, their corresponding messages, and thoughts attributed to those messages. You may add conversations, visit existing conversations and add messages or thoughts, or simply view them.
 
-In the project directory, you can run:
+## Requirements
 
-### `yarn start`
+* [React](https://www.ruby-lang.org/en/documentation/installation/) (17.0.1)
+* [npm](https://www.npmjs.com/get-npm), a dependency manager
+* Ensure rails api is running on port 3000
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Getting Started
 
-### `yarn test`
+1. Clone the repo
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```
+   $ git clone https://github.com/Mar5Planet/simplesh-frontend.git
+   $ cd simplesh-frontend
+   ```
 
-### `yarn build`
+2. Install dependencies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```
+   $ npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Run component tests
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```
+   $ npm run test  
+   ```
+   
+4. Run React application on server
+* Ensure the back end API is started on port 3000.
+* Once running the command below, if prompted to run React app on different port press y key.
 
-### `yarn eject`
+   ```
+   $ npm start
+   ```
+   
+##App should be fully up and running!
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Key areas of repo
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* [APP component](src/App.js) 
+* [Messages Component](src/components/Message.js)
+* [Conversations Container](src/containers/Conversations.js)
+* [tests](src/App.test.js)
