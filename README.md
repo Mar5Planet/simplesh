@@ -43,7 +43,7 @@ The simplesh application is designed to simplify conversations, their correspond
    $ npm start
    ```
    
-##App should be fully up and running!
+Simplesh is now up and running!
 
 ## Key areas of repo
 
