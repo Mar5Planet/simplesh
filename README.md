@@ -4,13 +4,13 @@ Simplesh Front-End
 
 Prior to setting up this project, please visit the simplesh-api [here](https://github.com/Mar5Planet/simplesh-api). The following instructions are created to set up the React front end for the simplesh application. 
 
-The simplesh application is designed to simplify conversations, their corresponding messages, and thoughts attributed to those messages. You may add conversations, visit existing conversations and add messages or thoughts, or simply view them.
+The simplesh application is designed to simplify conversations, their corresponding messages, and thoughts attributed to those messages. You may add conversations, visit existing conversations and add messages or thoughts.
 
 ## Requirements
 
 * [React](https://www.ruby-lang.org/en/documentation/installation/) (17.0.1)
 * [npm](https://www.npmjs.com/get-npm), a dependency manager
-* Ensure rails api is running on port 3000
+* Ensure rails API is running on port 3000
 
 
 ## Getting Started
