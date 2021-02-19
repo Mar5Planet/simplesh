@@ -4,9 +4,15 @@ import Conversation from '../components/Conversation';
 const Conversations = (props) => {
     const [visibleForm, setVisibleForm] = useState(false)
     const [title, setTitle] = useState('')
+    const [convos, setConvos] = useState(props.convos)
 
     const renderConvos = () => {
-        return props.convos.map(convo => <Conversation convo={convo} key={convo.id} />)
+        return convos.map(convo => <Conversation convo={convo} key={convo.id} />)
+    }
+
+    const handleSearch = term => {
+        let newConvos = props.convos.filter((convo) => convo.title.toLowerCase().includes(term.toLowerCase()))
+        setConvos(newConvos)
     }
 
     return (
@@ -33,6 +39,11 @@ const Conversations = (props) => {
 
             </div>
             : ''}
+
+            <div className="search">
+                <h5>Search Conversation</h5>
+                <input onChange={(e) => handleSearch(e.target.value)} placeholder="Conversation title" />
+            </div>
             {renderConvos()}
         </div>
     )
