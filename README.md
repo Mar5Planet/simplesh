@@ -29,6 +29,7 @@ The simplesh application is designed to simplify conversations, their correspond
    ```
 
 3. Run component tests
+* Once running the command below, select the 'a' key to run all tests.
 
    ```
    $ npm run test  
@@ -42,7 +43,7 @@ The simplesh application is designed to simplify conversations, their correspond
    $ npm start
    ```
    
-##App should be fully up and running!
+Simplesh is now up and running!
 
 ## Key areas of repo
 
